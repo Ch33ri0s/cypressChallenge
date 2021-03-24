@@ -5,7 +5,6 @@ describe('Get Logo', () => {
       cy.visit('https://www.award.co/');
       cy.get('.logo-white').click();
       cy.scrollTo('bottom');
-      cy.get('.w-layout-grid .footer-column:nth-child(2) > a');
       cy.contains('Recognize');
       cy.contains('Celebrate');
       cy.contains('Reward');
